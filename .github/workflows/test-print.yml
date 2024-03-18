@@ -1,0 +1,15 @@
+name: "Test-Action-Luffy"
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: Win-New-Luffy
+    steps:
+      - name: Checkout
+        run: echo "hello world"
+        
