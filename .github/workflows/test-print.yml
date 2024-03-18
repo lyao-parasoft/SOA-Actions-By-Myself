@@ -1,15 +1,10 @@
-name: "Test-Action-Luffy"
+name: Hello World Workflow on Luffy self-runner
 
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+on: [push]
 
 jobs:
-  test:
-    runs-on: Win-New-Luffy
+  hello_world_job:
+    runs-on: self-hosted, Win-New-Luffy
     steps:
-      - name: Checkout
-        run: echo "hello world"
-        
+    - name: Print Hello World
+      run: echo "Hello World"
