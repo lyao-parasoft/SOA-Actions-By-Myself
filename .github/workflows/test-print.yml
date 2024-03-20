@@ -8,3 +8,7 @@ jobs:
     steps:
     - name: Print Hello World
       run: echo "Hello World , this test script is using for testing the yml in github actions, so my name is luffy"
+    - name: My custom action
+      uses: lyao-parasoft/SOA-Actions-By-Myself@master
+    - name: echo local command
+      run: "C:/cpptest_standard-2022.1.0/cpptest/cpptestcli.exe"
